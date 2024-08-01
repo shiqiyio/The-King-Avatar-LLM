@@ -12,19 +12,13 @@
 基于《全职高手》小说原文，并通过大模型进行问答对的生成。
 使用InternLM2进行Lora微调+RAG语料库得到。
 
-> 阿宝，一个土生土长的上海人，在九十年代上海商界中摸爬滚打的人物。
-> 
-> 生于普通家境，祖辈资产阶级背景。1966年家庭遭变，阿宝不甘平凡，从里弄工厂工人起步，渴望改写命运。
-> 
-> 爷叔，商界老将，成为阿宝导师兼挚友，传授市场智慧，助力其商途。初恋雪芝，公交偶遇，深情难敌现实，十年重逢方知受骗。汪小姐，外贸精英，既是事业推手，亦有情感牵绊，阿宝却始终避谈感情，留下遗憾。玲子，日本归沪女子，助阿宝解困，共营“夜东京”。李李，黄河路头牌饭店“至真园”的老板，经历曲折，终入佛门。
-> 
-> 宝总在与麒麟会在股市较量中陷入困境，其服饰公司股价大跌，面临平仓风险。蔡总未履行股票承诺，宝总资金被套。宝总拒绝撤资或求助麒麟会，相信麒麟会为了自救会出手相助。麒麟会提出帮助，但宝总拒绝了现金和法人股的回报，只要求麒麟会撤销对川沙农地的收购，保护当地农民利益，并决定退出股市。宝总从和平饭店的七年经历中领悟到人生起伏，能接受从繁华到平凡的转变，坚信土地与未来同在。
+> 网游荣耀中被誉为教科书级别的顶尖高手叶修，因为种种原因遭到俱乐部的驱逐，离开职业圈的他栖身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着往昔的回忆和一把由苏沐秋制作的、却因游戏版本更新被迫搁置的银武千机伞，开始了重返巅峰之路。
 
 ## 架构图
 ![enter image description here](https://github.com/hoo01/chat-huyu-ABao/blob/main/imgs/%E6%9E%B6%E6%9E%84.jpg?raw=true)
 
 ## 讲解视频
-[微调InternLM大模型，和《繁花》中的阿宝进行上海话交流吧！](https://www.bilibili.com/video/BV1sJvFeXELe/?spm_id_from=333.999.0.0&vd_source=9b01f3d1e6addb97637b80b1bb9c008b)
+[微调InternLM大模型，来了解《全职高手》吧！](https://www.bilibili.com/video/BV1sJvFeXELe/?spm_id_from=333.999.0.0&vd_source=9b01f3d1e6addb97637b80b1bb9c008b)
 
 ## 项目亮点
 
@@ -37,16 +31,16 @@
 
 **1.clone 本项目至本地开发机** 
 
-    git clone https://github.com/hoo01/chat-huyu-ABao.git
+    git clone https://github.com/shiqiyio/The-King-Avatar-LLM.git
 
 **2.配置环境**
 
     #创建虚拟环境
-    conda create -n fanhua python=3.10 
+    conda create -n quanzhi python=3.10 
     # 激活环境 
-    conda activate fanhua
+    conda activate quanzhi
     # 安装所需依赖（这一步所需时间较长）
-    cd chat-huyu-ABao  
+    cd The-King-Avatar-LLM.git  
     pip install -r requirements.txt
 
 **3.生成RAG依赖的Chroma数据库**
@@ -58,7 +52,7 @@
     python start.py
 
 > 默认端口和ip为127.0.0.1:7860，如需变更请打开start.py修改<br>
-> 非本地开发机，需要做端口映射<br>
+> 可通过vscode进行端口映射，方便快捷！<br>
 > 以浦语InternStudio开发机为例，打开本地计算机的命令提示符，输入
 > `ssh -CNg -L 7860:127.0.0.1:7860 root@ssh.intern-ai.org.cn -p <自己的号码>`<br>
 > password：输入自己的密码 ![enter image description
@@ -179,6 +173,5 @@ RAG设计链路参考：<br>
 ## 致谢
 
  - [书生浦语](https://internlm.intern-ai.org.cn/)提供的平台及算力资源<br>
- - 闻星大佬和助教提供的教学帮助<br>
 欢迎大家报名新一期的书生浦语大模型实战营！[第三期报名](https://github.com/InternLM/Tutorial)
 
