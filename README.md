@@ -9,7 +9,8 @@
 [ModelScope-url]: https://www.modelscope.cn/models/hooo01/chat-huyu-ABao
 ## 简介
 
-chat-沪语-阿宝是基于《繁花》剧本和大模型生成的问答对，使用InternLM2进行Lora微调+RAG语料库得到的扮演阿宝的上海方言角色聊天模型。
+基于《全职高手》小说原文，并通过大模型进行问答对的生成。
+使用InternLM2进行Lora微调+RAG语料库得到。
 
 > 阿宝，一个土生土长的上海人，在九十年代上海商界中摸爬滚打的人物。
 > 
