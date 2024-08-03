@@ -53,7 +53,7 @@
 > 默认端口和ip为127.0.0.1:7860，如需变更请打开start.py修改<br>
 > 推荐通过vscode进行端口映射，方便快捷！<br>
 >
-> qlora 微调过程![image-20240803001645804](C:\Users\18471\AppData\Roaming\Typora\typora-user-images\image-20240803001645804.png)
+> qlora 微调过程![image-20240803001645804](https://github.com/shiqiyio/The-King-Avatar-LLM/blob/main/asset/Architecture.png)
 
 **5.示例效果**
 ![enter image description here](https://github.com/hoo01/chat-huyu-ABao/blob/main/imgs/test1.jpg?raw=true)
