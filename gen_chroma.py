@@ -40,7 +40,7 @@ if __name__ == "__main__":
         persist_directory=persist_directory,
         collection_name='quanzhi_collection'
     )
-        vectordb.persist()
+    vectordb.persist()
     print("开始持久化...")
     print("文本分割和向量数据库构建完成，并已持久化到磁盘。")
 

@@ -22,13 +22,19 @@ def load_chain(split_docs,llm):
     embeddings = HuggingFaceEmbeddings(model_name="shibing624/text2vec-base-chinese")
     # 向量数据库持久化路径
     persist_directory = './chroma' #根据下载好的模型的路径调整，如果路径报错就写绝对路径
-
-    # 加载数据库
-    vectordb = Chroma.from_documents(
-        documents=split_docs,
-        embedding=embeddings,
-        persist_directory=persist_directory)
-    vectordb.persist()
+    
+    # 加载数据库,若本地存在则加载，不存在则创建
+    if os.path.exists(persist_directory):
+        print("检测到数据库，加载中...")
+        vectordb = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
+    else:
+        print("未检测到数据库，正在创建新的向量数据库...")
+        vectordb = Chroma.from_documents(
+            documents=split_docs,
+            embedding=embeddings,
+            persist_directory=persist_directory
+        )
+        vectordb.persist()
     
     retriever = vectordb.as_retriever(search_kwargs={"k": 2})
     
@@ -38,7 +44,7 @@ def load_chain(split_docs,llm):
     # 定义一个 Prompt Template
     template = """
     **Context**（背景）：
-    你是《全职高手》的专家读者，对这部小说有深入了解，并能够根据上下文提供准确的回答。
+    你是一个由十七专门训练的《全职高手》小说问答模型。可以提供准确且详细的解答，帮助用户深入了解这部小说的角色、情节和背景。
     
     **Objective**（目标）：
     回答有关《全职高手》的问题，提供有价值的见解，并确保回答基于提供的上下文信息。
