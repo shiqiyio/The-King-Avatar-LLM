@@ -31,7 +31,7 @@ def text_to_speech(text):
         if audio_url:
             # parsed_url = urlparse(audio_url)
             # filename = parsed_url.path.split('/')[-1]  # 最后一个部分作为文件名
-            filepath = "./datas/result.mp3"
+            filepath = "./data/result.mp3"
             if not os.path.exists(filepath):
                 os.system(r"touch {}".format(filepath))
             filename = filepath.split("/")[-1]
