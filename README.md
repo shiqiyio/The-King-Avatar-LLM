@@ -1,5 +1,5 @@
 # The-King-Avatar-LLM
-全职高手
+全职高手robot 基于 InternLM 实现,感谢[Tutorial](https://github.com/InternLM/Tutorial)
 
 [![Static Badge](https://img.shields.io/badge/license-Apache%202.0-00a2a8)][license-url] | [![Static Badge](https://img.shields.io/badge/openxlab-models-blue)][OpenXLab_Model-url] | [![Static Badge](https://img.shields.io/badge/modelscope-models-9371ab)][ModelScope-url]
 
