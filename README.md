@@ -39,7 +39,7 @@
     # 激活环境 
     conda activate quanzhi
     # 安装所需依赖（这一步所需时间较长）
-    cd The-King-Avatar-LLM.git  
+    cd The-King-Avatar-LLM
     pip install -r requirements.txt
 
 **3.生成RAG依赖的Chroma数据库**
