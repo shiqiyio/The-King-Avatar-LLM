@@ -56,7 +56,8 @@
 > qlora 微调过程![image-20240803001645804](https://github.com/shiqiyio/The-King-Avatar-LLM/blob/main/asset/process.png)
 
 **5.示例效果**
-![enter image description here](https://github.com/hoo01/chat-huyu-ABao/blob/main/imgs/test1.jpg?raw=true)
+
+![image-20240804235145720](./asset/display.png)
 
 ## 微调思路
 <details>
