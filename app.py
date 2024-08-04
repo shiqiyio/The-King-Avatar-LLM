@@ -1,6 +1,7 @@
 import streamlit as st
 from ragchat import Model_center
 from llm import InternLM
+from modelscope import snapshot_download
 from tts import text_to_speech
 import os
 
@@ -32,11 +33,15 @@ model_name_or_path = './quanzhigaoshou'
 
 if not os.path.exists(model_name_or_path):
 
-    os.system('apt install git')
-    os.system('apt install git-lfs')
-    os.system(f'git clone https://code.openxlab.org.cn/shiqiyioo/quanzhigaoshou.git {model_name_or_path}')
-    os.system(f'cd {model_name_or_path} && git lfs pull')
+    # os.system('apt install git')
+    # os.system('apt install git-lfs')
+    # os.system(f'git clone https://code.openxlab.org.cn/shiqiyioo/quanzhigaoshou.git {model_name_or_path}')
+    # os.system(f'cd {model_name_or_path} && git lfs pull')
+
+    #SDK模型下载
+    model_dir = snapshot_download('shiqiyio/quanzhigaoshou',cache_dir=model_name_or_path)
     print("模型下载完成")
+    
 
 # model_name_or_path = '/root/share/model_repos/internlm-chat-7b'
 model_center = load_model(model_name_or_path)
