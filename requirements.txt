@@ -12,3 +12,4 @@ transformers
 chromadb==0.5
 sentencepiece
 einops
+pysqlite3-binary
