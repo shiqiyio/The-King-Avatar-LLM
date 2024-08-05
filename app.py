@@ -29,19 +29,20 @@ def load_model(model_name_or_path):
     model_center = Model_center(llm)
     return model_center
 
-model_name_or_path = './shiqiyio/quanzhigaoshou'
+# model_name_or_path = './shiqiyio/quanzhigaoshou'
+model_name_or_path = './quanzhigaoshou'
 
 if not os.path.exists(model_name_or_path):
 
-    # os.system('apt install git')
-    # os.system('apt install git-lfs')
-    # os.system(f'git clone https://code.openxlab.org.cn/shiqiyioo/quanzhigaoshou.git {model_name_or_path}')
-    # os.system(f'cd {model_name_or_path} && git lfs pull')
+    os.system('apt install git')
+    os.system('apt install git-lfs')
+    os.system(f'git clone https://code.openxlab.org.cn/shiqiyioo/quanzhigaoshou.git {model_name_or_path}')
+    os.system(f'cd {model_name_or_path} && git lfs pull')
 
     #SDK模型下载
-    print("模型开始下载...")
-    model_dir = snapshot_download('shiqiyio/quanzhigaoshou',cache_dir='./')
-    print("模型下载完成...")
+    # print("模型开始下载...")
+    # model_dir = snapshot_download('shiqiyio/quanzhigaoshou',cache_dir='./')
+    # print("模型下载完成...")
     
 
 # model_name_or_path = '/root/share/model_repos/internlm-chat-7b'
