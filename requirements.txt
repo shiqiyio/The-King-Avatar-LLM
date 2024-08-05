@@ -11,3 +11,4 @@ tqdm==4.66.4
 transformers
 chromadb==0.5
 sentencepiece
+einops
