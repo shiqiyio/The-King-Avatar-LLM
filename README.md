@@ -1,5 +1,5 @@
 # The-King-Avatar-LLM
-全职高手
+全职高手robot 基于 InternLM 实现,感谢[Tutorial](https://github.com/InternLM/Tutorial)
 
 [![Static Badge](https://img.shields.io/badge/license-Apache%202.0-00a2a8)][license-url] | [![Static Badge](https://img.shields.io/badge/openxlab-models-blue)][OpenXLab_Model-url] | [![Static Badge](https://img.shields.io/badge/modelscope-models-9371ab)][ModelScope-url]
 
@@ -12,12 +12,13 @@
 使用InternLM2进行QLora微调+RAG语料库得到。
 
 > 网游荣耀中被誉为教科书级别的顶尖高手叶修，因为种种原因遭到俱乐部的驱逐，离开职业圈的他栖身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着往昔的回忆和一把由苏沐秋制作的、却因游戏版本更新被迫搁置的银武千机伞，开始了重返巅峰之路。
+> 在数字化时代，文学作品的阅读与探索正逐步迈向智能化的新高度。本项目旨在搭建一个创新性的平台，该平台核心功能是将经典及原创小说内容全面融入大规模语言模型的知识库中，通过实现基于 Retrieval-Augmented Generation (RAG) 的问答系统，为用户提供前所未有的互动阅读体验。
 
 ## 架构图
 ![enter image description here](./asset/Architecture.png?raw=true)
 
 ## 讲解视频
-[微调InternLM大模型，来了解《全职高手》吧！](https://www.bilibili.com/video/BV1sJvFeXELe/?spm_id_from=333.999.0.0&vd_source=9b01f3d1e6addb97637b80b1bb9c008b)
+[微调InternLM大模型，来了解《全职高手》吧！](https://github.com/shiqiyio/The-King-Avatar-LLM)
 
 ## 项目亮点
 
