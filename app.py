@@ -1,7 +1,7 @@
 import streamlit as st
 from ragchat import Model_center
 from llm import InternLM
-from modelscope import snapshot_download
+# from modelscope import snapshot_download
 from tts import text_to_speech
 import os
 
