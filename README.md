@@ -18,7 +18,7 @@
 ![enter image description here](./asset/Architecture.png?raw=true)
 
 ## 讲解视频
-[微调InternLM大模型，来了解《全职高手》吧！](https://github.com/shiqiyio/The-King-Avatar-LLM)
+[微调InternLM大模型，来了解《全职高手》吧！](https://www.bilibili.com/video/BV1dYaoebERQ/?vd_source=6856ef3925c77e098a1a2df5b9634513#reply112908180655895)
 
 ## 项目亮点
 
