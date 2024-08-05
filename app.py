@@ -56,7 +56,7 @@ if "audio_file" not in st.session_state:
 with st.sidebar:
     st.markdown("The-King-Avatar-LLM")
     st.markdown("[InternLM](https://github.com/InternLM/InternLM.git)")
-    st.markdown("[chat-huyu-ABao](https://github.com/shiqiyio/The-King-Avatar-LLM)")
+    st.markdown("[The-King-Avatar-LLM](https://github.com/shiqiyio/The-King-Avatar-LLM)")
     st.markdown("感谢[chat-huyu-ABao](https://github.com/hoo01/chat-huyu-ABao.git)")
     st.button('Clear Chat History', on_click=on_btn_click)
 
